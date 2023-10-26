@@ -1,7 +1,39 @@
+import investmentCalculatorLogo from './assets/investment-calculator-logo.png'
+import './index.css'
+import Header from "./components/Header.jsx";
+import UserInput from "./components/UserInput.jsx";
+import {useState} from "react";
+import Results from "./components/Results.jsx";
+
 function App() {
-  return (
-    <h1>React Investment Calculator</h1>
-  )
+    const [userInput, setUserInput] = useState({
+        initialInvestment: 1000,
+        annualInvestment: 1200,
+        expectedReturn: 6,
+        duration: 10,
+    })
+
+    const inputIsValid = userInput.duration >= 1
+
+
+    function handleChange(inputIdentify, newValue) {
+        setUserInput(prevUserInput => {
+            return {
+                ...prevUserInput,
+                [inputIdentify]: +newValue
+            }
+        })
+    }
+
+
+    return (
+        <>
+            <Header/>
+            <UserInput onChangeInput={handleChange} userInput={userInput}/>
+            {!inputIsValid && <p className="center">Please enter  a duration greater than 0</p>}
+            {inputIsValid && <Results input={userInput}/>}
+        </>
+    )
 }
 
 export default App
