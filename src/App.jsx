@@ -5,9 +5,9 @@ export default function App() {
   return (
     <>
       <Header />
-      <mains>
+      <main>
         <AuthInputs />
-      </mains>
+      </main>
     </>
   );
 }
