@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { styled } from 'styled-components'
-
+import Button from './Button.jsx'
 const ControlContainer =  styled.div`
   display: flex;
   flex-direction: column;
@@ -55,9 +55,9 @@ export default function AuthInputs() {
       </ControlContainer>
       {/*</div>*/}
       <div className="actions">
-        <button type="button" className="text-button">
+        <Button type="button" className="text-button">
           Create a new account
-        </button>
+        </Button>
         <button className='button' onClick={handleLogin}>Sign In</button>
       </div>
     </div>
