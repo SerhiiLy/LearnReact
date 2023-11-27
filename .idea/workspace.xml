@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7edd00ca-314f-4930-a480-4d8deec5bcf4" name="Changes" comment="add form for create Expense">
-      <change afterPath="$PROJECT_DIR$/src/components/Button.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AuthInputs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AuthInputs.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
